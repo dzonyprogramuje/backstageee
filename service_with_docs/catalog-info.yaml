@@ -5,7 +5,7 @@ metadata:
   description: The place to be, for great artists
   annotations:
     backstage.io/techdocs-ref: dir:.
-    github.com/project-slug: dir:.
+    github.com/project-slug: dzonyprogramuje/backstageee
 spec:
   type: service
   lifecycle: production
