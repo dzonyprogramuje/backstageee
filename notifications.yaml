@@ -8,10 +8,12 @@ spec:
   profile:
     displayName: Default Team
     description: Zespół domyślny
+  children: []  # Dodaj to pole, aby spełnić wymagania
 
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
+metadata:
 metadata:
   name: my-component
   namespace: default
