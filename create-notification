@@ -1,0 +1,22 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: example-template
+  title: Example Template
+  description: An example template that sends a notification
+spec:
+  parameters:
+    - title: Severity
+      type: string
+      required: true
+      default: 'info'
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: broadcast
+        title: 'Template executed'
+        info: 'Your template has been executed'
+        severity: ${{ parameters.severity }}
+        link: https://backstage.io
